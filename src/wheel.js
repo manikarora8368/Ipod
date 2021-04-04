@@ -89,10 +89,10 @@ class Wheel extends react.Component{
                     {img:'/assets/nocompetition.jpg',song:'/assets/songs/NoCompetition.mp3'}
                 ];
         var index = arr.findIndex((e)=>JSON.stringify(e)==JSON.stringify({img:'/assets/brownmunnde.jpg',song:'/assets/songs/BrownMunde.mp3'}));
-        console.log(index);
-        console.log('hello');
-        console.log(arr[1].img);
-        console.log(arr[2].song);
+        // console.log(index);
+        // console.log('hello');
+        // console.log(arr[1].img);
+        // console.log(arr[2].song);
         this.setState({
             currentSong: arr[2].song,
             currentSongImg: arr[2].img

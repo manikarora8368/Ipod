@@ -4,19 +4,20 @@ class MusicPlayer extends react.Component {
     constructor(){
         super();
     }
-    componentDidMount(){
+    componentDidMount()
+    {
         const player = document.getElementsByClassName("audio-element")[0];
-        console.log(player);
-        player.load();
         player.play();
-    }
-    componentWillUnmount(){
-        const player = document.getElementsByClassName("audio-element")[0];
-        player.currentTime=0;
-        player.pause();
     }
     render(){
         const {currentSong , currentSongImg} = this.props;
+        const player = document.getElementsByClassName("audio-element")[0];
+        if(player){
+            player.currentTime=0;
+            player.pause();
+            player.load();
+            player.play();
+        }
         console.log(this.props);
     return (
     <div>
