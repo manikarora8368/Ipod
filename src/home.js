@@ -2,7 +2,7 @@ import React from 'react';
 import HomeGif from './assets/home-main.gif';
 const Home=(props)=>{
     const {activeDiv} = props;
-    // console.log(props);
+    //console.log(props);
     return(
         <div className="home-main">
             <div className="main-left">
