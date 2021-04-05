@@ -1,9 +1,10 @@
 import './App.css';
-import Wheel from './wheel';
+import Ipod from './Ipod';
 function App() {
   return (
     <div className="App">
-      <Wheel/>
+      {/* Ipod */}
+      <Ipod/>
     </div>
   );
 }
